@@ -1,0 +1,19 @@
+@import "_theme/index.scss";
+@each $theme in $themes {
+  body[theme="#{$theme}"] {
+    @include theme($theme);
+    .inventoryChart {
+      display: flex;
+      padding: 12px;
+      h2 {
+        font-size: 16px;
+      }
+      .pieChart {
+        width: 240px;
+      }
+      .barChart {
+        width: 380px;
+      }
+    }
+  }
+}

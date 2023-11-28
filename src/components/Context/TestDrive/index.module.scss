@@ -1,0 +1,31 @@
+@import "_theme/index.scss";
+@each $theme in $themes {
+  body[theme="#{$theme}"] {
+    @include theme($theme);
+    .test-drive {
+      margin-top: 12px;
+      height: 95%;
+      background: $background-color-2
+        url("/public/border_bg.png")
+        top
+        left
+        no-repeat;
+      :global {
+        ::-webkit-scrollbar {
+          display: none;
+        }
+        .pui-tabs-body {
+          scrollbar-width: none;
+        }
+        .pui-tabs-header {
+          padding: 0 16px;
+        }
+
+        .pui-tabs-body {
+          height: calc(100% - 56px);
+          overflow: auto;
+        }
+      }
+    }
+  }
+}

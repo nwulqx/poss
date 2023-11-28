@@ -1,0 +1,12 @@
+.typewriter {
+  max-width: 500px; /* or any value you prefer */
+  width: 100%;
+  animation: typing 2s steps(22), blink-caret 0.75s step-end infinite;
+
+
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black; }
+  }
+}

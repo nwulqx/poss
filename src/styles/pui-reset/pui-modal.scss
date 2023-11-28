@@ -1,0 +1,15 @@
+@import '_size/index.scss';
+@each $size in $sizes {
+  .pui-modal-size-#{$size} {
+    &.pui-modal-reverse {
+      .pui-modal-footer {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: sizeValue($size, 12px, 24px);
+        > .pui-button {
+          margin: 0 !important;
+        }
+      }
+    }
+  }
+}

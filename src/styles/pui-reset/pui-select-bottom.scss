@@ -1,0 +1,13 @@
+@import '@/styles/theme/index.scss';
+
+@each $theme in $themes {
+  .pui-theme-#{$theme} {
+    @include theme($theme);
+    // 创建商机吸底含有类select-business-item-sticky
+    .pui-select-option:has(.select-business-item-sticky) {
+      position: sticky;
+      bottom: 0;
+      background: $background-color-3;
+    }
+  }
+}

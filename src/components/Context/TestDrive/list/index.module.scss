@@ -1,0 +1,39 @@
+@import '_theme/index.scss';
+@each $theme in $themes {
+  body[theme='#{$theme}'] {
+    @include theme($theme);
+.test-drive-list {
+    padding:  10px 0 8px 20px;
+    .status {
+        position: relative;
+        padding-left: 16px;
+        &::after {
+            content: '';
+            width: 10px;
+            height: 10px;
+            display: block;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            position: absolute;
+            background-color: red;
+            border-radius: 5px;
+          }
+    }
+    .edit::after {
+        background-color: rgb(255, 155, 0);
+    }
+    .pending::after {
+        background-color: rgb(242, 255, 0);
+    }
+    .executing::after {
+        background-color: rgb(20, 108, 209);
+    }
+    .cancel::after {
+        background-color: rgb(126, 128, 127);
+    }
+    .finished::after {
+        background-color: rgb(1, 186, 29);
+    }
+}
+  }}

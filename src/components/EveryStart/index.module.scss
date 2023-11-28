@@ -1,0 +1,55 @@
+.main {
+  width: 100%;
+  margin-top: 15px;
+  .common {
+    width: 100%;
+    min-height: 100px;
+    background: #1b2023 url("/public/border_bg.png") top left no-repeat;
+    padding: 16px 20px;
+    .list {
+      display: flex;
+      margin-top: 18px;
+      .item {
+        height: 64px;
+        width: 178px;
+        border-right: 1px solid rgba(255, 255, 255, 0.15);
+        margin-right: 18px;
+        &:last-child {
+          border-right: 0;
+        }
+        p {
+          font-family: Inter;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 22px;
+          color: rgba(255, 255, 255, 0.5);
+        }
+        h3 {
+          font-family: Porsche Next;
+          font-size: 28px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 36px;
+        }
+      }
+    }
+    .bottom {
+      display: flex;
+      justify-content: space-between;
+      .right {
+        width: 300px;
+      }
+      .left {
+        width: 200px;
+      }
+      h3 {
+        font-family: PingFang SC;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 26px;
+      }
+    }
+  }
+}
